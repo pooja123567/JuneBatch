@@ -2,8 +2,8 @@
 public class BasicPgm {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	System.out.println("value");
+System.out.println("verification data");
 	}
 
 }
