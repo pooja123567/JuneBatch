@@ -1,0 +1,327 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>23/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed May 21 15:53:49 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>12 seconds (12046 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Testng.ParametrisationinTestng.testLevelParameters()'><b>testLevelParameters</b><br>Test class: Testng.ParametrisationinTestng</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;username&apos; is required by @Test on method testLevelParameters but has not been marked @Optional or defined
+in C:\Users\Pooja\eclipse-workspace\WebsiteAutomation\testng2.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1035357140", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1035357140'><pre>org.testng.TestNGException: 
+Parameter &apos;username&apos; is required by @Test on method testLevelParameters but has not been marked @Optional or defined
+in C:\Users\Pooja\eclipse-workspace\WebsiteAutomation\testng2.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:879)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
+	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:911)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Testng.ParametrisationinTestng@6a2f6f80</td></tr>
+<tr>
+<td title='Testng.ParametrisationinTestng.suiteLevelParameters()'><b>suiteLevelParameters</b><br>Test class: Testng.ParametrisationinTestng</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;URL&apos; is required by @Test on method suiteLevelParameters but has not been marked @Optional or defined
+in C:\Users\Pooja\eclipse-workspace\WebsiteAutomation\testng2.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1901663135", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1901663135'><pre>org.testng.TestNGException: 
+Parameter &apos;URL&apos; is required by @Test on method suiteLevelParameters but has not been marked @Optional or defined
+in C:\Users\Pooja\eclipse-workspace\WebsiteAutomation\testng2.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:879)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
+	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:911)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Testng.ParametrisationinTestng@6a2f6f80</td></tr>
+<tr>
+<td title='Testng.listenerCheck.listener()'><b>listener</b><br>Test class: Testng.listenerCheck</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at Testng.listenerCheck.listener(listenerCheck.java:12)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace584157293", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace584157293'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at Testng.listenerCheck.listener(listenerCheck.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Testng.listenerCheck@75db5df9</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Testng.ChildClass1.childClass1()'><b>childClass1</b><br>Test class: Testng.ChildClass1</td>
+<td></td>
+<td>0</td>
+<td>Testng.ChildClass1@77f1baf5</td></tr>
+<tr>
+<td title='Testng.ParametrisationinTestng.classLevelParameters()'><b>classLevelParameters</b><br>Test class: Testng.ParametrisationinTestng<br>Parameters: firstname, lastname, address</td>
+<td></td>
+<td>0</td>
+<td>Testng.ParametrisationinTestng@6a2f6f80</td></tr>
+<tr>
+<td title='Testng.ParametrisationinTestng.classLevelParameters()'><b>classLevelParameters</b><br>Test class: Testng.ParametrisationinTestng<br>Parameters: deepali, joshi, delhi</td>
+<td></td>
+<td>0</td>
+<td>Testng.ParametrisationinTestng@6a2f6f80</td></tr>
+<tr>
+<td title='Testng.HelperAttribute.dMethod()'><b>dMethod</b><br>Test class: Testng.HelperAttribute</td>
+<td></td>
+<td>0</td>
+<td>Testng.HelperAttribute@33c911a1</td></tr>
+<tr>
+<td title='Testng.Openurl.openUrl()'><b>openUrl</b><br>Test class: Testng.Openurl</td>
+<td></td>
+<td>2</td>
+<td>Testng.Openurl@1190200a</td></tr>
+<tr>
+<td title='Testng.ThreeMethodOneClass.loginWebsite()'><b>loginWebsite</b><br>Test class: Testng.ThreeMethodOneClass</td>
+<td></td>
+<td>0</td>
+<td>Testng.ThreeMethodOneClass@4c39bec8</td></tr>
+<tr>
+<td title='Testng.ThreeMethodOneClass.groupData3()'><b>groupData3</b><br>Test class: Testng.ThreeMethodOneClass</td>
+<td></td>
+<td>0</td>
+<td>Testng.ThreeMethodOneClass@4c39bec8</td></tr>
+<tr>
+<td title='Testng.ParametrisationinTestng.classLevelParameters()'><b>classLevelParameters</b><br>Test class: Testng.ParametrisationinTestng<br>Parameters: mohina, kumar, haldwani</td>
+<td></td>
+<td>0</td>
+<td>Testng.ParametrisationinTestng@6a2f6f80</td></tr>
+<tr>
+<td title='Testng.ThreeMethodOneClass.autoLogin()'><b>autoLogin</b><br>Test class: Testng.ThreeMethodOneClass</td>
+<td></td>
+<td>0</td>
+<td>Testng.ThreeMethodOneClass@4c39bec8</td></tr>
+<tr>
+<td title='Testng.CheckAnnotation.checkAnnotation2()'><b>checkAnnotation2</b><br>Test class: Testng.CheckAnnotation</td>
+<td></td>
+<td>0</td>
+<td>Testng.CheckAnnotation@7817fd62</td></tr>
+<tr>
+<td title='Testng.OneMoreClass.groupData4()'><b>groupData4</b><br>Test class: Testng.OneMoreClass</td>
+<td></td>
+<td>0</td>
+<td>Testng.OneMoreClass@707194ba</td></tr>
+<tr>
+<td title='Testng.WithoutmainMehod.demo()'><b>demo</b><br>Test class: Testng.WithoutmainMehod</td>
+<td></td>
+<td>0</td>
+<td>Testng.WithoutmainMehod@f79e</td></tr>
+<tr>
+<td title='Testng.ThreeMethodOneClass.loginApp()'><b>loginApp</b><br>Test class: Testng.ThreeMethodOneClass</td>
+<td></td>
+<td>0</td>
+<td>Testng.ThreeMethodOneClass@4c39bec8</td></tr>
+<tr>
+<td title='Testng.HelperAttribute.cMethod()'><b>cMethod</b><br>Test class: Testng.HelperAttribute</td>
+<td></td>
+<td>0</td>
+<td>Testng.HelperAttribute@33c911a1</td></tr>
+<tr>
+<td title='Testng.ThreeMethodOneClass.data1()'><b>data1</b><br>Test class: Testng.ThreeMethodOneClass</td>
+<td></td>
+<td>0</td>
+<td>Testng.ThreeMethodOneClass@4c39bec8</td></tr>
+<tr>
+<td title='Testng.ThreeMethodOneClass.loginApi()'><b>loginApi</b><br>Test class: Testng.ThreeMethodOneClass</td>
+<td></td>
+<td>0</td>
+<td>Testng.ThreeMethodOneClass@4c39bec8</td></tr>
+<tr>
+<td title='Testng.HelperAttribute.aMethod()'><b>aMethod</b><br>Test class: Testng.HelperAttribute</td>
+<td></td>
+<td>0</td>
+<td>Testng.HelperAttribute@33c911a1</td></tr>
+<tr>
+<td title='Testng.ThreeMethodOneClass.groupData1()'><b>groupData1</b><br>Test class: Testng.ThreeMethodOneClass</td>
+<td></td>
+<td>0</td>
+<td>Testng.ThreeMethodOneClass@4c39bec8</td></tr>
+<tr>
+<td title='Testng.ChildClass2.childClass2()'><b>childClass2</b><br>Test class: Testng.ChildClass2</td>
+<td></td>
+<td>0</td>
+<td>Testng.ChildClass2@4961f6af</td></tr>
+<tr>
+<td title='Testng.ThreeMethodOneClass.data2()'><b>data2</b><br>Test class: Testng.ThreeMethodOneClass</td>
+<td></td>
+<td>0</td>
+<td>Testng.ThreeMethodOneClass@4c39bec8</td></tr>
+<tr>
+<td title='Testng.OneMoreClass.Demo2()'><b>Demo2</b><br>Test class: Testng.OneMoreClass</td>
+<td></td>
+<td>0</td>
+<td>Testng.OneMoreClass@707194ba</td></tr>
+<tr>
+<td title='Testng.CheckAnnotation.checkAnnotation()'><b>checkAnnotation</b><br>Test class: Testng.CheckAnnotation</td>
+<td></td>
+<td>0</td>
+<td>Testng.CheckAnnotation@7817fd62</td></tr>
+<tr>
+<td title='Testng.ThreeMethodOneClass.groupData2()'><b>groupData2</b><br>Test class: Testng.ThreeMethodOneClass</td>
+<td></td>
+<td>0</td>
+<td>Testng.ThreeMethodOneClass@4c39bec8</td></tr>
+</table><p>
+</body>
+</html>

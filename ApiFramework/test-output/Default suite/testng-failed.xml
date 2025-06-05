@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.testing.testScripts.TC2_GetAllRequest">
+      <class name="org.testing.testScripts.TC1_PostRequest">
         <methods>
-          <include name="testcase_2"/>
+          <include name="testcase_1"/>
         </methods>
-      </class> <!-- org.testing.testScripts.TC2_GetAllRequest -->
+      </class> <!-- org.testing.testScripts.TC1_PostRequest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
