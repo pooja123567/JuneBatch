@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Testng.ParametrisationinTestng">
+      <class name="Testng.Openurl">
         <methods>
-          <include name="suiteLevelParameters"/>
-          <include name="testLevelParameters"/>
+          <include name="openUrl"/>
         </methods>
-      </class> <!-- Testng.ParametrisationinTestng -->
+      </class> <!-- Testng.Openurl -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

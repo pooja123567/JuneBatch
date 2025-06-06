@@ -18,6 +18,7 @@ public class Openurl {
 		
 		Select se=new Select(driver.findElement(By.id("dropdown-class-example")));
 	se.selectByValue("option1");
+	
 	}
 
 }
