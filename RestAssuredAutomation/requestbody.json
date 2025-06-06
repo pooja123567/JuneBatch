@@ -1,0 +1,12 @@
+{
+"firstname":"{{firstname}}",
+"lastname":"bisht",
+"Department":"tech",
+"id":"{{id}}",
+"Location":
+{
+"Address":"Haldwani",
+"Profile":"QA"
+}
+}
+
